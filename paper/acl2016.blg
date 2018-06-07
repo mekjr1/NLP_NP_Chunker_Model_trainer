@@ -1,0 +1,8 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: acl2016.aux
+The style file: acl2016.bst
+Database file #1: mybib.bib
+`year' is a missing field, not a string, for entry LREC:08
+while executing---line 1314 of file acl2016.bst
+Warning--empty year in LREC:08
+Warning--empty title in LREC:08
+(There was 1 error message)

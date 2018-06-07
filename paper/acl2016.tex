@@ -1,0 +1,236 @@
+%
+% File acl2016.tex
+%
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% Based on the style files for ACL-2013, which were, in turn,
+%% Based on the style files for ACL-2012, which were, in turn,
+%% based on the style files for ACL-2011, which were, in turn, 
+%% based on the style files for ACL-2010, which were, in turn, 
+%% based on the style files for ACL-IJCNLP-2009, which were, in turn,
+%% based on the style files for EACL-2009 and IJCNLP-2008...
+
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt]{article}
+\usepackage{acl2016}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+	basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=Octave,                 % the language of the code
+	otherkeywords={*,...},           % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=2,	                   % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\aclfinalcopy % Uncomment this line for the final submission
+%\def\aclpaperid{***} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+\newcommand\BibTeX{B{\sc ib}\TeX}
+
+\title{Natural Language Processing and	Information Retrieval with Applications in Social Networks: NP Chunker}
+
+\author{Abdul Gafar Manuel Meque \\
+		Institute of Information Science / Address line 1 \\
+		Nataional Chengchi University / Address line 2 \\
+		Taiwan International Graduate Program / Address line 3 \\
+		{\tt ameque@iis.sinica.edu.tw}  \\}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+  In the present project, I present alternative feature set selections to improve the performance of the Noun Phrase chunker featured in \cite{Nltk:09}.
+  Several feature set plus algorithms combinations where examined and the end system, has proven to greatly outperform the baseline system by more 3 points in F1-Measure.
+\end{abstract}
+
+\section{Introduction}
+
+The task of Chunking, also know as shallow parsing, is the process of analyzing a sentence by its basic (most elementary) unit of information (constituents parts) for later perform the linkage to a higher order unit ( such as Noun Phrases), has been made popular by its introduction as a shared task in CoNLL 2000.
+Various approaches at solving the Chunking task have been employed over the past 15 years or so, ranging for rule based approaches using regular expression rules to (more computational expensive and widely employed today) statistical approaches \cite{SLP:09}. 
+The current work will focus mainly in the statistical approaches, using the machine learning and natural language processing modules provided by the nltk package, the subject of \cite{Nltk:09}. Three different algorithms will be explored with various feature sets combinations and the results will be evaluated and the best performing one will be chosen for further inspection.
+
+
+
+\section{Dataset, Task and Baseline}
+
+
+\subsection{Data}
+The data set for this project comes from the CoNNL-2000 shared task, concerning chunk segmentation recognition in the test set using machine learning approach. Two sets where provided (pre-available in nltk), one for training and the other one for testing, making a total of 259104 word tokens, structured as follows:
+\begin{itemize}
+	\item Training Set
+	\begin{itemize}
+		\item 211727 word tokens
+		\item 8936 chunked  sents (the actual target of the work) of NP type
+	\end{itemize}
+	\item Test Set
+	\begin{itemize}
+		\item 47377 word tokens
+		\item 2012 chunked sents (the acctual training set in this work)of NPtype
+	\end{itemize}
+\end{itemize}
+After a few analysis over the distribution of the NP chunk tags, POS tags and words in the training , it is clear that there is a substantial amount of words tagged as I-NP and B-NP as depitected in the table bellow:
+\begin{table}
+\begin{center}
+	\begin{tabular}{|c|c|}
+	\hline 
+	Chunk Tag & Count \\
+	\hline 
+	B-NP & 55081 \\  
+	\hline 
+	I-NP & 63307  \\ 
+	\hline 
+	O & 27902  \\ 
+	\hline 
+	
+\end{tabular}
+\caption {Chunk tags \& their respective counts}
+\end{center}
+\end{table}
+    
+\subsection{Task and Goals}
+The main task in this project is to devise ways to improve the performance scores of the baseline system described in [\ref{baseline}]
+
+\subsection{Baseline System}\label{baseline}
+
+The baseline used for the current project is provided in the chapter 7.3 of \cite{Nltk:09}, to run the system an external software is required, its described in section [\ref{approach}]. The following table shows the performance of the baseline system on the test set, using different algorithms. This step is necessary to provide backing to the intuition that the algorithm also influences the performance, but it allows for a clear view on the degree of influence.
+
+\begin{table}
+	
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline 
+			 Score & MEwM & MEwG& NB& NBB & SVM   \\
+			\hline 
+			IOB  & 96.1 &96.0 &95.5 & 95.0 & 96.2 \\  
+			\hline 
+			Preci.   &  88.8 &88.3 & 85.9&86.1 & 88.7\\ 
+			\hline 
+			Recall      &  91.2 & 91.2& 90.0&90.0 & 91.5\\ 
+			\hline 
+			F-Me.   &  90.0 & 89.8&87.9 &88.0 & 90.1 \\ 
+	
+			\hline	
+		\end{tabular}
+		\caption {\cite{Nltk:09}'s ChunkParse score (baseline)}
+
+\end{table}
+
+
+
+
+
+
+\section{Proposed Approach}\label{approach}
+Gather all the statistical information from the train data and after a careful analysis of the baseline chunker, the new step is to redesign the features selection and test.
+This is a two step process:
+\begin{list}{label}{spacing}
+	\item choose candidates feature sets
+	\item train and test using three best performing algorithms from the baseline.
+\end{list}
+To prevent over-fitting and over-tuning the model on the basis of the test data, a cross-validation testing scheme will be adopted, using only the training and development set, using 10 fold.
+
+\subsection{Feature Selection}
+Combination of significant features have been selected, following the proposed selection schemes from similar works such as \cite{LREC:08} and \cite{LREC:08}
+
+\begin{itemize}
+	\item Feature Set 1:
+	\begin{itemize}
+		\item Word Lemma, POS Tag with context, Word Shape 
+	\end{itemize}
+	\item Feature Set 2:
+	\begin{itemize}
+		\item From Set 1 + word
+	\end{itemize}
+	\item Feature Set 3:
+	\begin{itemize}
+		\item  Set 1+ subtree (parse tree)
+	\end{itemize} 
+	\item
+	\begin{itemize}
+		\item POS,Word,Shape,tagsinceDT
+	\end{itemize} 
+\end{itemize}
+
+\subsection{Solving for unseen words}
+To enhance the feature vector, the wordnet thesaurus is employed, first to update the Word feature (this particularly true in Set3 and Set4) will not always be the exact input word, it will be either the POS of the word (if the word is not in the wordnet's synsets ), and secondly the lemmatizer is employed to acquire the lemmas.              
+
+\section {Test and Results}
+Applying the feature selection the following performance scores are achieved by the system with LinearSVC and different feature sets:
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|}
+	\hline 
+	Features& IOB Accuracy  & Precision  & Recall  & F1 Score  \\ 
+	\hline 
+	Set1	&96.6&	91.1&	92.2&	91.7\\
+	\hline 
+	Set2	&96.7	&91.4	&92.4	&91.9\\
+	\hline 
+	Set3&	97&	91.8&	93.1&	92.4\\
+	\hline 
+	Set4	& 97.1&92.3&93.3&92.8	\\
+	\hline 
+
+\end{tabular} 
+\caption {System performance uses SVM}
+\end{table}
+
+As we can see from the above table, SVM' SVC outperforms the other algorithms for this particular task, in this settings, so the final code is implemented as such.
+
+\section{Conclusion}
+
+The final result of all implementations and changes for improvements made in this project can be verified by the code implementation, that provides all required aspects from scoring and also allows for cross-validation.
+
+
+
+% include your own bib file like this:
+%\bibliographystyle{acl}
+%\bibliography{acl2016}
+\bibliography{mybib}
+\bibliographystyle{acl2016}
+
+\appendix
+
+
+
+\end{document}

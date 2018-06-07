@@ -1,0 +1,246 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.6)  16 AUG 2017 19:20
+entering extended mode
+**./acl2016.tex
+(acl2016.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (acl2016.sty
+Conference Style for ACL 2016 -- released January 17th, 2016
+\titlebox=\skip43
+\aclrulerbox=\box26
+\aclrulercount=\count87
+\aclruleroffset=\dimen103
+\cv@lineheight=\dimen104
+\cv@boxheight=\dimen105
+\cv@tmpbox=\box27
+\cv@refno=\count88
+\cv@tot=\count89
+\cv@tmpc@=\count90
+\cv@tmpc=\count91
+) ("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\times.st
+y"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+) ("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) ("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latexsym.s
+ty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
+.sty"
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count92
+\lst@gtempboxa=\box28
+\lst@token=\toks15
+\lst@length=\count93
+\lst@currlwidth=\dimen106
+\lst@column=\count94
+\lst@pos=\count95
+\lst@lostspace=\dimen107
+\lst@width=\dimen108
+\lst@newlines=\count96
+\lst@lineno=\count97
+\lst@maxwidth=\dimen109
+
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.
+sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count98
+\lst@skipnumbers=\count99
+\lst@framebox=\box29
+)
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
+.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.st
+y"
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cf
+g"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pdftex
+.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
+err.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
+s.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
+.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
+.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphics
+.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+)
+\Gin@req@height=\dimen110
+\Gin@req@width=\dimen111
+)
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1
+.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (acl2016.aux)
+\openout1 = `acl2016.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 81.
+
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) ABD: EveryShipout initializing macros
+\c@lstlisting=\count101
+
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
+kii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count102
+\scratchdimen=\dimen112
+\scratchbox=\box30
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen113
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks17
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 82.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 82.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 82.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 82.
+ ("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 82.
+("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 102.
+
+ ("C:\Users\mekjr1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd
+"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 116.
+ [1{C:/Users/mekjr1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+
+]
+Overfull \hbox (12.59616pt too wide) in paragraph at lines 141--155
+[][] 
+ []
+
+
+Overfull \hbox (49.35541pt too wide) in paragraph at lines 201--215
+[][] 
+ []
+
+
+Underfull \hbox (badness 3735) in paragraph at lines 222--223
+\OT1/ptm/m/n/10.95 The fi-nal re-sult of all im-ple-men-ta-tions and
+ []
+
+(acl2016.bbl
+Missing character: There is no â in font ptmri7t!
+Missing character: There is no € in font ptmri7t!
+Missing character: There is no “ in font ptmri7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+) [2] (acl2016.aux) )
+(\end occurred when \iffalse on line 331 was incomplete) 
+Here is how much of TeX's memory you used:
+ 2698 strings out of 493634
+ 38773 string characters out of 3134832
+ 143429 words of memory out of 3000000
+ 6066 multiletter control sequences out of 15000+200000
+ 20606 words of font info for 48 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 26i,10n,36p,493b,268s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/mekjr1/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/mekjr1/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
+sers/mekjr1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pf
+b><C:/Users/mekjr1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb
+8a.pfb><C:/Users/mekjr1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times
+/utmr8a.pfb><C:/Users/mekjr1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on acl2016.pdf (2 pages, 71436 bytes).
+PDF statistics:
+ 30 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

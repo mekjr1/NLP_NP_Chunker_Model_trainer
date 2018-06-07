@@ -1,0 +1,20 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Bird \bgroup et al.\egroup }2009]{Nltk:09}
+Steven Bird, Ewan Klein, and Edward Loper.
+\newblock 2009.
+\newblock {\em Natural Language Processing with Python – Analyzing Text with
+  the Natural Language Toolkit}.
+\newblock O’Reilly Media Inc.
+
+\bibitem[\protect\citename{editor}]{LREC:08}
+editor, editor.
+
+\bibitem[\protect\citename{Jurafsky and Martin}2009]{SLP:09}
+Daniel Jurafsky and James~H. Martin.
+\newblock 2009.
+\newblock {\em Speech and Language Processing: An Introduction to Natural
+  Language Processing, Speech Recognition, and Computational Linguistics.}
+\newblock Prentice-Hall., 2nd edition edition.
+
+\end{thebibliography}
